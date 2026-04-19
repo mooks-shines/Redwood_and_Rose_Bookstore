@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bookstore</title>
+        <!--Link your css or javasrcipt here-->
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/styling.css">
+        <link rel="stylesheet" href="css/home-page-css.css">
+    </head>
+    <body>
+        <div id="main-header">
+            <div class="overhead-banner">
+                <h3>Buy one book get one 50% off this weekend!</h3>
+            </div>
+            <!--create a logo-->
+            <nav class="profile">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                <ul>
+                    <li><a href="my-account.html">My Account</a></li>
+                    <li><a href="wishlistpage.html">My Wishlist</a></li>
+                    <li><a href="shopping-cart.html"><img id="icon" src="images/shopping-cart.png"></a></li>
+                </ul>
+                
+            </nav>
+            
+            <nav class="pages">
+                <ul>
+                    <li><a href="book-of-the-month.html">Book of the Month</a></li>
+                    <li><a href="aboutus.html"> About Us</a></li>
+                    <!--Add your pages link here-->
+                </ul>
+            </nav>
+        </div>
+        <main> 
+
+            <!--your content goes here-->
+            <!--give your main an id so you can style it specifically  without touching the shared layout
+            ex. <main id= "About Us"></main>-->
+
+
+            <div class="slideshow">
+                
+                <div class="slide">
+                    <!--image and button here-->
+                    <img src="images/carousel-slides/Welcome-page-slide.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <!--image and button here-->
+                    <img src="images/carousel-slides/classic-slide.png" alt="logo">
+                </div>
+                <!-- <div class="slide">
+                    /image and button here/
+                    <img src="images/logo.png" alt="logo">
+                    <p>Shop Now!</p>
+                </div> -->
+                <!-- <div class="slide">
+                    /image and button here/
+                    <img src="images/logo.png" alt="logo">
+                    <p>Shop Now!</p>
+                </div> -->
+
+                <!--next and previous buttons-->
+                <a class="previous" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+                <br>
+
+                <!--dots and circles at the bottom of the slideshow-->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <!-- <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span> -->
+                </div>
+            </div>
+
+             <h1>Teams Favorite Books</h1><br>
+            <div class="team-fav-books">
+                <script src="javascript/script.js"></script>
+            </div>
+
+            
+
+            <div class="featured-ad">
+                <a href="book.html?isbn=9781451673319&price=17"><img src="images/Fahrenheit-451-featured-ad.png" alt="Fahrenheit 451 featured ad"></a> 
+            </div>
+
+            <h1>Best Sellers</h1>
+            <div class="best-seller"></div>
+
+            <h1>Classics You Will Love</h1>
+            <div class="classics"></div>
+
+            <div class="bottom-section">
+                <div class="WSWU">
+                    <h2>Why Shop With Us</h2>
+                    <p><strong>⭐Fast Shipping</strong></p>
+                    <p>Get your books delivered quickly and reliability</p>
+                    <p><strong>⭐Secure Checkout</strong></p>
+                    <p>Your payment information is always protected</p>
+                    <p><strong>⭐Curated Selection</strong></p>
+                    <p>Hand picked bestsellers and hidden gems</p>
+                    <p><strong>⭐24/7 Support</strong></p>
+                    <p>We're here whenever you need help</p>
+                </div>
+                <div class="newsletter">
+                    <h2>Join Our Book Club!</h2>
+                    <p>Stay updated with new releases, exclusive deals, and cozy reading recommendations</p>
+                    <form>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email">
+                    </form>
+                    <button onclick="alert('Thank you for subscribing to our newsletter!')">Subscribe</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <table>
+                <thead>
+
+                </thead>
+                <tfoot>
+
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td><!--coloumn 1-->
+                            <img src="images/logo.png" alt="logo"><br>
+                            <p>Bookstore with great prices</p>
+                        </td>
+                        <td><!--column 2-->
+                            <!--second page nav bar-->
+                            <nav class="secondary-nav">
+                                <ul>
+                                    <li><a href="book-of-the-month.html">Book of the Month</a></li>
+                                    <li><a href="aboutus.html"> About Us</a></li>
+                                    <!--Add your pages link here-->
+                                </ul>
+                            </nav>
+                        </td>
+                        <td><!--coloumn 3-->
+                            <nav class="social-nav">
+                                <ul>
+                                    <li><a href="https://github.com/adrianacuan98-prog/Web-Programming-project">Our GitHub</a></li>
+                                    <!--add social links here-->
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+
+            
+            <a href="pages/termsofuse.html">Terms of Use</a><br>
+            <a href="pages/privacy.html">Privacy</a><br>
+            <div class="copyright">
+                <p> 2026 Redwood & Rose. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <!--Javascript scripts here-->
+        <script src="javascript/home-page.js"></script>
+        <script src="data/books.js"></script>
+        <script src="javascript/script.js"></script>
+
+    </body>
+</html>

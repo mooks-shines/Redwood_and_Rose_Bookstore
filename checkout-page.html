@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Checkout</title>
+        <!--Link your css or javasrcipt here-->
+        <link rel="icon" href=" images/favicon.ico">
+        <link rel="stylesheet" href=" css/styling.css">
+        <link rel="stylesheet" href=" css/checkout.css">
+    </head>
+    <body>
+        <div id="main-header">
+            <div class="overhead-banner">
+                <h3>Buy one book get one 50% off this weekend!</h3>
+            </div>
+            <!--create a logo-->
+            <nav class="profile">
+                <a href=" index.html"><img src=" images/logo.png" alt="Logo"></a>
+                <ul>
+                    <li><a href="my-account.html">My Account</a></li>
+                    <li><a href="wishlistpage.html">My Wishlist</a></li>
+                    <li><a href="shopping-cart.html"><img id="icon" src=" images/shopping-cart.png"></a></li>
+                </ul>
+                
+            </nav>
+            
+            <nav class="pages">
+                <ul>
+                    <li><a href="book-of-the-month.html">Book of the Month</a></li>
+                    <li><a href="aboutus.html"> About Us</a></li>
+                    <!--Add your pages link here-->
+                </ul>
+            </nav>
+        </div>
+        <main> 
+
+            <!--your content goes here-->
+            <!--give your main an id so you can style it specifically  without touching the shared layout
+            ex. <main id= "About Us"></main>-->
+
+            <!--A details for the section-->
+
+            <h1>My Checkout Page</h1>
+            <div class="check-page">
+            <div class="cards">
+                <form method="get" action="http://www.randyconnolly.com/tests/process.php">
+                    <details class="contact-information" open>
+                        <summary>Contact Information</summary>                       <form method="get" action="https://www.barnesandnoble.com/action_page.php"><!--error-->
+                            <fieldset>
+                                
+                                <lable for="fname">First Name</lable><br>
+                                <input type="text" name="firstName" id="fname" placeholder="First Name" required><br>
+                                <lable for="lname">Last Name</lable><br>
+                                <input type="text" name="lastName" id="lname" placeholder="Last Name"><br>
+                                <label for="email">Email</label><br>
+                                <input type="email" name="email" id="email" required><br>
+
+                    </details>
+                    <details class="shipping-address">
+                        <summary>Shipping Address</summary>
+                        
+                        <label for="streetaddr">Street Address</label><br>
+                        <input type="text" name="street-address" id="streetaddr" required><br>
+                        <label for="city">City</label><br>
+                        <input type="text" name="city" id="city" required><br>
+                        <label for="zipCode">Zip Code</label><br>
+                        <input type="number" name="zipcode" id="zipCode" required><br>
+                        <label for="country">Country</label><br>
+                        <select name="country">
+                            <option>United States</option>
+                            <option>Canada</option>
+                            <option>Puerto Rico</option>
+                            <option>Hawaii</option>
+                        </select><br>
+                        
+                    </details>
+                    <details class="shipping-method">
+                        <summary>Shipping Method</summary>
+                        <label for="ecomShip">Economy Shipping: 5-8 business days: $3.99</label>
+                        <input type="radio" name="shippingMethod" value="3.99"><br>
+                        <label for="stanShip">Standard Shipping: 3-5 business days: $4.99</label>
+                        <input type="radio" name="shippingMethod" value="4.99"><br>
+                        <label for="expressShip">Economy Shipping: 2-3 business days: $9.99</label>
+                        <input type="radio" name="shippingMethod" value="9.99"><br>
+                    </details>
+                    <details class="payment">
+                        <summary>Payment</summary>
+                        
+                        <label for="nameCard">Name on Card</label><br>
+                        <input type="text" name="nameCard" id="nameCard" required><br>
+                        <label for="cardNum">Card Number</label><br>
+                        <input type="text" name="cardNum" id="cardNum" placeholder="5555-5555-5555-5555" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required><br>
+                        <label for="cvv">CVV</label><br>
+                        <input type="text" name="cvv"id=cvv placeholder="123" pattern="[0-9]{3}" required><br>
+                        <label for="expDate">Expiration Date</label><br>
+                        <input type="month" name="expDate" id="expDate" placeholder="MM/YY" required><br>
+                        <input type="submit">
+                        <input type="reset">
+                    </details> 
+                    </fieldset>
+                </form>
+            </div>
+            <div class="summary">
+                <h1>Order Summary</h1>
+                 <table id="order-summary">
+                <thead>
+                    
+                </thead>
+                <tfoot>
+
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>SubTotal</td>
+                        <td id="subtotal">$0.00</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td id="shipping">$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Estimated Tax</td>
+                        <td id="tax">$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cart Total</td>
+                        <td id="total">$0.00</td>
+                    </tr>
+                    <tr class="button">
+                        <td colspan="2"><button onclick="alert('Your order has been submitted!')">Place Order</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            </div>
+            <button onclick="document.location.href='shopping-cart.html'">Back to Cart</button>
+
+            <!-- <div id="modal-form">
+                <div>
+                    <span class="close-model">close</span>
+                    <p>text here</p>
+                </div>
+            </div> -->
+
+        </main>
+        <footer>
+            <table>
+                <thead>
+
+                </thead>
+                <tfoot>
+
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td><!--coloumn 1-->
+                            <img src=" images/logo.png" alt="logo"><br>
+                            <p>Bookstore with great prices</p>
+                        </td>
+                        <td><!--column 2-->
+                            <!--second page nav bar-->
+                            <nav class="secondary-nav">
+                                <ul>
+                                    <li><a href="book-of-the-month.html">Book of the Month</a></li>
+                                    <li><a href="aboutus.html"> About Us</a></li>
+                                    <!--Add your pages link here-->
+                                </ul>
+                            </nav>
+                        </td>
+                        <td><!--coloumn 3-->
+                            <nav class="social-nav">
+                                <ul>
+                                    <li><a href="https://github.com/adrianacuan98-prog/Web-Programming-project">Our GitHub</a></li>
+                                    <!--add social links here-->
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+
+            
+            <a href="termsofuse.html">Terms of Use</a><br>
+            <a href="privacy.html">Privacy</a><br>
+            <div class="copyright">
+                <p> 2026 Redwood & Rose. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <!--Javascript scripts here-->
+        <script src=" javascript/script.js"></script>
+        <script src=" javascript/checkout.js"></script>
+
+    </body>
+</html>

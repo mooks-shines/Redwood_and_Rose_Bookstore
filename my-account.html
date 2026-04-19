@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Account</title>
+        <link rel="icon" href=" images/favicon.ico">
+        <link rel="stylesheet" href=" css/styling.css">
+        <link rel="stylesheet" href=" css/account-page.css">
+    </head>
+    <body>
+        <div id="main-header">
+            <div class="overhead-banner">
+                <h3>Buy one book get one 50% off this weekend!</h3>
+            </div>
+
+            <nav class="profile">
+                <a href=" index.html"><img src=" images/logo.png" alt="Logo"></a>
+                <ul>
+                    <li><a href="my-account.html">My Account</a></li>
+                    <li><a href="wishlistpage.html">My Wishlist</a></li>
+                    <li><a href="shopping-cart.html"><img id="icon" src=" images/shopping-cart.png" alt="Shopping Cart"></a></li>
+                </ul>
+            </nav>
+
+            <nav class="pages">
+                <ul>
+                    <li><a href="book-of-the-month.html">Book of the Month</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main id="account-page">
+            <section class="account-hero">
+                <h1>My Account</h1>
+                <p>Welcome back to Redwood & Rose</p>
+            </section>
+
+            <section class="account-layout">
+                <div class="account-card profile-card">
+                    <div>
+                        <img src=" images/logo.png" alt="Profile picture" class="account-avatar">
+                        <h2 id="user-name">Vasilije Lopicic</h2>
+                        <p id="membership-text">Member since 2026</p>
+                    </div>
+
+                    <div class="profile-buttons">
+                        <button id="edit-btn">Edit Profile</button>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="account-card info-card">
+                        <h2>Account Information</h2>
+
+                        <div class="info-row">
+                            <span class="label">Email:</span>
+                            <span id="user-email">vasilije@example.com</span>
+                        </div>
+
+                        <div class="info-row">
+                            <span class="label">Favorite Genre:</span>
+                            <span id="user-genre">Science Fiction</span>
+                        </div>
+
+                        <div class="info-row">
+                            <span class="label">Saved Address:</span>
+                            <span id="user-address">Jacksonville, Florida</span>
+                        </div>
+
+                        <div class="info-row">
+                            <span class="label">Last Login:</span>
+                            <span id="last-login">Loading...</span>
+                        </div>
+
+                        <button id="edit-info-btn">Edit Account Information</button>
+                    </div>
+
+                    <section class="account-stats">
+                        <div class="account-card stat-box">
+                            <h3>Wishlist</h3>
+                            <p id="wishlist-count">4 Books</p>
+                        </div>
+
+                        <div class="account-card stat-box">
+                            <h3>Cart</h3>
+                            <p id="cart-count">2 Items</p>
+                        </div>
+
+                        <div class="account-card stat-box">
+                            <h3>Orders</h3>
+                            <p id="orders-count">3 Orders</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section class="account-card recent-orders">
+                <h2>Recent Orders</h2>
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>Book</th>
+                            <th>Status</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>The Maze Runner</td>
+                            <td>
+                                <div class="status-cell">
+                                    <span>Shipped</span>
+                                    <div class="status-bar">
+                                        <div class="status-fill shipped"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>$13.99</td>
+                        </tr>
+                        <tr>
+                            <td>The Giver</td>
+                            <td>
+                                <div class="status-cell">
+                                    <span>Processing</span>
+                                    <div class="status-bar">
+                                        <div class="status-fill processing"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>$10.99</td>
+                        </tr>
+                        <tr>
+                            <td>Fahrenheit 451</td>
+                            <td>
+                                <div class="status-cell">
+                                    <span>Delivered</span>
+                                    <div class="status-bar">
+                                        <div class="status-fill delivered"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>$17.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src=" images/logo.png" alt="logo"><br>
+                            <p>Bookstore with great prices</p>
+                        </td>
+                        <td>
+                            <nav class="secondary-nav">
+                                <ul>
+                                    <li><a href="book-of-the-month.html">Book of the Month</a></li>
+                                    <li><a href="aboutus.html">About Us</a></li>
+                                    <li><a href="my-account.html">My Account</a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav class="social-nav">
+                                <ul>
+                                    <li><a href="https://github.com/adrianacuan98-prog/Web-Programming-project">Our GitHub</a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <a href="termsofuse.html">Terms of Use</a><br>
+            <a href="privacy.html">Privacy</a><br>
+            <div class="copyright">
+                <p>2026 Redwood & Rose. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script src=" javascript/account-page.js"></script>
+    </body>
+</html>

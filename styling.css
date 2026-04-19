@@ -1,0 +1,91 @@
+:root{
+    --mainbg-color: #f8e5ee;
+    --button-color: #9f2042; /*cherryrose*/
+    --tertiary-color: #7B0D1E;
+}
+
+body{
+    background-color: var(--mainbg-color);
+}
+.profile img, table img{
+    width: 75px;
+    height:75px;
+}
+.profile a{
+    color:white;
+    text-decoration: none;
+}
+.profile li{
+    display:inline;
+    margin: 0px 5px;
+    background-color: var(--button-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+#icon{
+   height: 25px;
+   width: 25px; 
+}
+.pages a{
+    color:white;
+    text-decoration: none;
+}
+.pages li{
+    display: inline;
+    background-color: var(--button-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0px 5px;
+}
+.profile ul{
+    /* margin-left: 1500px; */
+    margin-left: auto;
+    width:25%;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.overhead-banner{
+    text-align: center;
+    background-color: var(--button-color);
+    padding: 5px;
+    color:white;
+}
+
+/*footer*/
+
+footer{
+    background-color: var(--tertiary-color);
+    color:white;
+    padding: 10px;
+}
+footer p{
+    display: inline;
+    margin: 0px 5px;
+}
+table{
+    margin:auto;
+    width:100%;
+}
+table a, footer a{
+    text-decoration: none;
+    color:white;
+}
+table li{
+    list-style: none;
+    padding: 10px;
+}
+td{
+    border-right: 2px solid var(--mainbg-color);
+}
+.copyright{
+    text-align: center;
+}
+a:hover{
+    text-decoration:underline;
+}
+
+
+

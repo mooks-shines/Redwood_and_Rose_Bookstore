@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Shopping Cart</title>
+        <!--Link your css or javasrcipt here-->
+        <link rel="icon" href=" images/favicon.ico">
+        <link rel="stylesheet" href=" css/styling.css">
+        <link rel="stylesheet" href=" css/shopping-cart.css">
+    </head>
+    <body>
+        <div id="main-header">
+            <div class="overhead-banner">
+                <h3>Buy one book get one 50% off this weekend!</h3>
+            </div>
+            <!--create a logo-->
+            <nav class="profile">
+                <a href=" index.html"><img src=" images/logo.png" alt="Logo"></a>
+                <ul>
+                    <li><a href="my-account.html">My Account</a></li>
+                    <li><a href="wishlistpage.html">My Wishlist</a></li>
+                    <li><a href="shopping-cart.html"><img id="icon" src=" images/shopping-cart.png"></a></li>
+                </ul>
+                
+            </nav>
+            
+            <nav class="pages">
+                <ul>
+                    <li><a href="book-of-the-month.html">Book of the Month</a></li>
+                    <li><a href="aboutus.html"> About Us</a></li>
+                    <!--Add your pages link here-->
+                </ul>
+            </nav>
+        </div>
+        <main> 
+
+            <!--your content goes here-->
+            <!--give your main an id so you can style it specifically  without touching the shared layout
+            ex. <main id= "About Us"></main>-->
+            <div class="header">
+            
+           
+            </div>
+            <div class="shopping-section">
+
+            <div class="cart-items">
+            <h1>My Shopping Cart</h1>
+            <table id="shopping-cart">
+                <thead>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                    <th> </th>
+                </thead>
+                <tfoot>
+
+                </tfoot>
+                <tbody id="book-items">
+                    <!-- <tr>
+                        <td>
+                            <img src=" images/Fahrenheit_451.jpg">
+                            <p>Fahrenheit 451</p>
+                        </td>
+                        <td>$17.00</td>
+                        <td>1</td>
+                        <td>$17.00</td>
+                        <td><button onclick="removeFromCart(item.isbn)">Remove Book</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src=" images/Fahrenheit_451.jpg">
+                            <p>Fahrenheit 451</p>
+                        </td>
+                        <td>$17.00</td>
+                        <td>1</td>
+                        <td>$17.00</td>
+                        <td><button onclick="removeFromCart(item.isbn)">Remove Book</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <!--The order summary table colspan 2 for button-->
+            </div>
+            
+            <div class="summary">
+                 <h1>Order Summary</h1>
+            <table id="order-summary">
+                <thead>
+                    
+                </thead>
+                <tfoot>
+
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>SubTotal</td>
+                        <td id="subtotal">$0.00</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Estimated Tax</td>
+                        <td id="tax">$0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cart Total</td>
+                        <td id="total">$0.00</td>
+                    </tr>
+                    <tr class="button">
+                        <td colspan="2"><button onclick="document.location.href='checkout-page.html'">Procced to Checkout</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            </div>
+            <button onclick="document.location=' index.html'">Continue Shopping</button>
+
+        </main>
+        <footer>
+            <table>
+                <thead>
+
+                </thead>
+                <tfoot>
+
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td><!--coloumn 1-->
+                            <img src=" images/logo.png" alt="logo"><br>
+                            <p>Bookstore with great prices</p>
+                        </td>
+                        <td><!--column 2-->
+                            <!--second page nav bar-->
+                            <nav class="secondary-nav">
+                                <ul>
+                                    <li><a href="book-of-the-month.html">Book of the Month</a></li>
+                                    <li><a href="aboutus.html"> About Us</a></li>
+                                    <!--Add your pages link here-->
+                                </ul>
+                            </nav>
+                        </td>
+                        <td><!--coloumn 3-->
+                            <nav class="social-nav">
+                                <ul>
+                                    <li><a href="https://github.com/adrianacuan98-prog/Web-Programming-project">Our GitHub</a></li>
+                                    <!--add social links here-->
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+
+            
+            <a href="termsofuse.html">Terms of Use</a><br>
+            <a href="privacy.html">Privacy</a><br>
+            <div class="copyright">
+                <p> 2026 Redwood & Rose. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <!--Javascript scripts here-->
+        <script src=" javascript/script.js"></script>
+
+    </body>
+</html>

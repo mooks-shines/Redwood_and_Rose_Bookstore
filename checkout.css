@@ -1,0 +1,71 @@
+details{
+    background-color: white;
+    border:3px solid var(--tertiary-color);
+    border-radius: 8px;
+    margin: 20px;
+    width: 900px;
+}
+details summary{
+    font-size:1.25rem;
+    color: var(--tertiary-color);
+}
+input[type=text], input[type=email], input[type=number], select, input[type=month], input[type=radio]{
+    margin-bottom: 12px;
+    border-radius: 5px;
+    padding:10px;
+
+}
+/*from the shopping css but woth some tweaks*/
+.summary{
+    border: 3px solid var(--tertiary-color);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+}
+#order-summary td{
+    padding: 10px;
+    text-align: center;
+}
+#order-summary{
+    width:350px;
+    height:auto;
+}
+button, input[type=submit]{
+    background-color: var(--button-color);
+    color: var(--mainbg-color);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration:0.4s;/*A cleaner transtion instead of static*/
+    
+}
+button:hover, input[type=submit]:hover{
+    background-color: var(--mainbg-color);
+    color: var(--button-color);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+input[type=reset]{
+     background-color: var(--button-color);
+    color: var(--mainbg-color);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration:0.4s;
+}
+input[type=reset]:hover{
+    background-color: red;
+    color: var(--button-color);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+.check-page{
+        display:flex;
+    flex-direction: row;
+    justify-content: space-between; /*used this instead of gap for reszing the browser*/
+    align-items: flex-start;
+}
+h1{
+    color: var(--tertiary-color);
+}
+.contact-information, .shipping-address, .shipping-method, .payment{
+    padding: 20px;
+}
